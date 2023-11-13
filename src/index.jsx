@@ -43,6 +43,7 @@ subscribe(APP_READY, () => {
     <AppProvider store={initializeStore()}>
       <Helmet>
         <link rel="shortcut icon" href={getConfig().FAVICON_URL} type="image/x-icon" />
+        <meta http-equiv="Content-Security-Policy" content="frame-ancestors https://nia.tz https://customer-739k3kbjczvmye9y.cloudflarestream.com/; style-src 'self' https://customer-739k3kbjczvmye9y.cloudflarestream.com 'unsafe-inline';" />
       </Helmet>
       <PathFixesProvider>
         <NoticesProvider>
