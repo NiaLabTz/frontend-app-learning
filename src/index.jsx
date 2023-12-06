@@ -116,7 +116,7 @@ initialize({
   handlers: {
     config: () => {
       mergeConfig({
-        CONTACT_URL: process.env.CONTACT_URL || null,
+        CONTACT_URL: process.env.CONTACT_URL || 'https://nia.tz/support/contact_us',
         CREDENTIALS_BASE_URL: process.env.CREDENTIALS_BASE_URL || null,
         CREDIT_HELP_LINK_URL: process.env.CREDIT_HELP_LINK_URL || null,
         DISCUSSIONS_MFE_BASE_URL: process.env.DISCUSSIONS_MFE_BASE_URL || null,
